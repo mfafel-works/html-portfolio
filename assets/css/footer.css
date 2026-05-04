@@ -1,0 +1,17 @@
+/* Footer */
+#footer {
+	background: linear-gradient(90deg, #e8d4c6, #ecdccf, #f1e7de, #f4eee7, #faf9f5);
+	padding: 2em 20px;
+	text-align: center;
+}
+
+#footer .inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#footer .copyright {
+	color: var(--color-text-dark);
+	font-size: 0.9rem;
+	opacity: 0.7;
+}

@@ -1,0 +1,98 @@
+/* Wave Elements */
+
+/* All wave types - base styles */
+.wave-up,
+.wave-down,
+.wave-last,
+.wave-up-two, 
+.wave-down-two,
+.wave-last-two {
+	width: 100%;
+	height: 105px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	opacity: 1;
+}
+
+/* wave-last-two background gradient - horizontal left to right */
+.wave-last-two {
+	background: linear-gradient(90deg, #e3cbba, #e8d4c5, #ead9cc, #eee1d6, #f1e6dd, #f5efe8);
+}
+
+/* Alternative waves - with cream-warm background */
+
+.wave-up-two,
+.wave-down-two {
+	background-color: var(--color-cream-warm);
+}
+
+/* Wave shapes */
+.wave-up::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23F2F0EA' fill-opacity='0.8' d='M0,60L48,50C96,40,192,20,288,15C384,10,480,20,576,35C672,50,768,70,864,75C960,80,1056,70,1152,55C1248,40,1344,20,1392,10L1440,0L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+	background-size: cover;
+}
+
+.wave-down::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23F2F0EA' fill-opacity='0.8' d='M0,60L48,50C96,40,192,20,288,15C384,10,480,20,576,35C672,50,768,70,864,75C960,80,1056,70,1152,55C1248,40,1344,20,1392,10L1440,0L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+	background-size: cover;
+	transform: rotate(180deg);
+}
+
+.wave-last::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='0%25' stop-color='%23e3cbb9' stop-opacity='0.8'/%3E%3Cstop offset='25%25' stop-color='%23e7d3c3' stop-opacity='0.8'/%3E%3Cstop offset='50%25' stop-color='%23ecddd1' stop-opacity='0.8'/%3E%3Cstop offset='75%25' stop-color='%23eee1d6' stop-opacity='0.8'/%3E%3Cstop offset='100%25' stop-color='%23f5efe9' stop-opacity='0.8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23grad)' d='M0,60L48,50C96,40,192,20,288,15C384,10,480,20,576,35C672,50,768,70,864,75C960,80,1056,70,1152,55C1248,40,1344,20,1392,10L1440,0L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'/%3E%3C/svg%3E") no-repeat;
+	background-size: cover;
+}
+.wave-last-two::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='0%25' stop-color='%23f5efe8' stop-opacity='0.8'/%3E%3Cstop offset='25%25' stop-color='%23f1e6dc' stop-opacity='0.8'/%3E%3Cstop offset='50%25' stop-color='%23ecddd1' stop-opacity='0.8'/%3E%3Cstop offset='75%25' stop-color='%23e8d4c5' stop-opacity='0.8'/%3E%3Cstop offset='100%25' stop-color='%23e3cbba' stop-opacity='0.8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23grad)' d='M0,60L48,50C96,40,192,20,288,15C384,10,480,20,576,35C672,50,768,70,864,75C960,80,1056,70,1152,55C1248,40,1344,20,1392,10L1440,0L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'/%3E%3C/svg%3E") no-repeat;
+	background-size: cover;
+	transform: rotate(180deg);
+}
+
+/* Alternative wave colors for light cream sections */
+.wave-up-two::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23F2F0EA' fill-opacity='0.8' d='M0,60L48,50C96,40,192,20,288,15C384,10,480,20,576,35C672,50,768,70,864,75C960,80,1056,70,1152,55C1248,40,1344,20,1392,10L1440,0L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+	background-size: cover;
+}
+
+.wave-down-two::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23F2F0EA' fill-opacity='0.8' d='M0,60L48,50C96,40,192,20,288,15C384,10,480,20,576,35C672,50,768,70,864,75C960,80,1056,70,1152,55C1248,40,1344,20,1392,10L1440,0L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+	background-size: cover;
+	transform: rotate(180deg);
+}
