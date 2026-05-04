@@ -1,0 +1,74 @@
+/* About Me Bubbles */
+#about-me {
+	background-color: var(--color-cream-light);
+	padding: auto;
+}
+
+.section-title {
+	text-align: center;
+	font-family: var(--font-heading);
+	font-size: 2.5rem;
+	color: var(--color-primary);
+	margin-bottom: 50px;
+}
+
+.bubble-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.bubble-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.bubble-photo {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background: rgba(255, 255, 255, 0.35);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.bubble-caption {
+	margin-top: 15px;
+	font-family: var(--font-heading);
+	font-size: 1.1rem;
+	color: var(--color-text-dark);
+}
+
+.bubble-item:hover .bubble-photo {
+	transform: translateY(-4px);
+	box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 900px) {
+	.bubble-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.bubble-photo {
+		width: 130px;
+		height: 130px;
+	}
+	.bubble-caption {
+		font-size: 1rem;
+	}
+}

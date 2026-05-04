@@ -1,0 +1,31 @@
+/* Fonts */
+@font-face {
+	font-family: "Playfair Display";
+	src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	src: url("../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: italic;
+}
+
+body {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-weight: 900;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
