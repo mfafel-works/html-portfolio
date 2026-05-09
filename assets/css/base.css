@@ -24,3 +24,6 @@ h2 {
 p {
 	font-family: -apple-system, BlinkMacSystemFont !important!;
 }
+#page-wrapper {
+	align-items: center;
+}
