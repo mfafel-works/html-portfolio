@@ -11,17 +11,25 @@
 
 .split-visual-left {
 	flex-shrink: 0;
+	min-height: 300px;
+	max-width: 1200px;
 	display: flex;
-	align-items: flex-start;
-	padding: 0 20px;
+	align-items: center;
+	margin: 0 auto;
+	padding: 25px 20px;
+	gap: 40px;
 	background-color: var(--color-cream-warm);
 }
 
 .split-visual-right {
 	flex-shrink: 0;
+	min-height: 300px;
+	max-width: 1200px;
 	display: flex;
-	align-items: flex-start;
-	padding: 0 20px;
+	align-items: center;
+	margin: 0 auto;
+	padding: 25px 20px;
+	gap: 40px;
 	background-color: var(--color-cream-light);
 }
 
