@@ -1,12 +1,18 @@
 /* Layouts - Split Sections */
 .section-content {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	gap: 50px;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding-right: 50px;
 	padding-left: 50px;
+}
+
+.section-content ul {
+	list-style-position: inside;
+	display: flex;
+	align-items: left;
 }
 
 .split-visual-left {
