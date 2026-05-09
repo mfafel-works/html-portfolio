@@ -13,7 +13,16 @@
 	flex-shrink: 0;
 	display: flex;
 	align-items: flex-start;
+	padding: 0 20px;
 	background-color: var(--color-cream-warm);
+}
+
+.split-visual-right {
+	flex-shrink: 0;
+	display: flex;
+	align-items: flex-start;
+	padding: 0 20px;
+	background-color: var(--color-cream-light);
 }
 
 .visual {
@@ -81,22 +90,6 @@
 	color: var(--color-text-dark);
 	line-height: 1.7;
 	margin-bottom: 0;
-}
-
-.split-visual-right {
-	flex-shrink: 0;
-	display: flex;
-	align-items: flex-start;
-	background-color: var(--color-cream-light);
-}
-
-#websites-logos {
-	background-color: var(--color-cream-warm);
-	padding: 0 20px;
-}
-
-#power-skills {
-	background-color: var(--color-cream-light);
 }
 
 .text-left {
