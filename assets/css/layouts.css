@@ -12,6 +12,7 @@
 .section-content ul {
 	list-style-position: inside;
 	display: flex;
+	flex-direction: column;
 	align-items: left;
 }
 
@@ -141,14 +142,14 @@
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-	.split-visual-left {
+	.split-visual-left .section-content{
 		flex-direction: column-reverse;
 		align-items: center;
 		text-align: center;
 		gap: 30px;
 		margin: 0 auto;
 	}
-	.split-visual-right {
+	.split-visual-right .section-content{
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
