@@ -19,8 +19,6 @@
 .split-visual-left {
 	flex-shrink: 0;
 	min-height: 300px;
-	max-width: 1200px;
-	display: flex;
 	align-items: center;
 	margin: 0 auto;
 	padding: 25px 20px;
@@ -31,8 +29,6 @@
 .split-visual-right {
 	flex-shrink: 0;
 	min-height: 300px;
-	max-width: 1200px;
-	display: flex;
 	align-items: center;
 	margin: 0 auto;
 	padding: 25px 20px;
